@@ -11,4 +11,10 @@ export const cars = [
         price: 22570,
         image: './public/honda-civic.webp',
     },
+    {
+        id: 3,
+        name: 'Toyota Corolla',
+        price: 15555,
+        image: './public/honda-civic.webp',
+    },
 ]
