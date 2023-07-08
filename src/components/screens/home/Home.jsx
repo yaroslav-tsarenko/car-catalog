@@ -1,12 +1,16 @@
 import styles from './Home.module.css'
 import CarItem from "./car-item/CarItem.jsx";
 import {cars as carsData} from './cars.data.js'
-import {useMemo, useState} from "react";
+import {useEffect, useMemo, useState} from "react";
 import CreateCarForm from "./create-car-form/CreateCarForm.jsx";
 
 const Home = () => {
 
 const [cars, setCars] = useState(carsData)
+
+    useEffect(() => {
+        console.log('hey')
+    }, [cars])
 
     return (
         <div>
